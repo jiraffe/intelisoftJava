@@ -1,2 +1,3 @@
 test
 Аледрипахонрики с подвыподвертом!
+https://www.codeschool.com/courses/shaping-up-with-angular-js
