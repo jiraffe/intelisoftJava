@@ -15,7 +15,7 @@ import Enumodel.Model;
 
 public class Logick implements Statsjob {
 
-	public List<Model> getAllcars() throws SQLException {
+	public List<Model> getAllstats() throws SQLException {
 		Session session = null;
 		List<Model> log = new ArrayList<Model>();
 		try {
@@ -32,13 +32,4 @@ public class Logick implements Statsjob {
 		return log;
 	}
 
-	public void bdstats(Model hp) throws SQLException {
-		// TODO Auto-generated method stub
-
-	}
-
-	public List getAllstats() throws SQLException {
-		// TODO Auto-generated method stub
-		return null;
-	}
 }

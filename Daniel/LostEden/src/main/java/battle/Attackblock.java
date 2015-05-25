@@ -1,5 +1,13 @@
 package battle;
 
+import java.util.List;
+
+import mysqljob.HibernateUtil;
+
+import org.hibernate.criterion.Restrictions;
+
+import Enumodel.Model;
+
 public class Attackblock {
 	// player
 	boolean attackhead;
@@ -26,7 +34,8 @@ public class Attackblock {
 	boolean eblockgroinfeet;
 	boolean eblockfeethead;
 
-	private void Userblock() {
+	public  void Userblock() {
+		eattackhead = true;
 		if (blockheadtorso == true) {
 			eattackhead = false;
 			eattacktorso = false;
@@ -43,10 +52,17 @@ public class Attackblock {
 		if (eattackhead && eattacktorso && eattackstomach && eattackgroin
 				&& eattackfeet == true) {
 
+			List hphero = HibernateUtil.getCurrentSession().createCriteria(Model.class)
+            	    .add( Restrictions.like("Nickname", "qweqwe") )
+            	     .add( Restrictions.like("hp", "") )
+            	                   	    .list();
+            System.out.println(hphero);
+			
+			
 		}
 	}
 
-	private void Userattack() {
+	public void Userattack() {
 		if (eblockheadtorso == true) {
 			attackhead = false;
 			attacktorso = false;

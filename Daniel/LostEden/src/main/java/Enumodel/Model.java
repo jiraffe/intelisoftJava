@@ -7,7 +7,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table
+@Table(name = "user")
 public class Model {
 	@Id
 	@GeneratedValue
@@ -46,9 +46,6 @@ public class Model {
 
 	@Column(name = "lvl")
 	private int lvl;
-
-	@Column(name = "status")
-	private int status;
 	
 	@Column(name = "avatar")
 	private int avatar;
@@ -149,13 +146,6 @@ public class Model {
 		this.lvl = lvl;
 	}
 
-	public int getStatus() {
-		return status;
-	}
-
-	public void setStatus(int status) {
-		this.status = status;
-	}
 
 	public int getAvatar() {
 		return avatar;

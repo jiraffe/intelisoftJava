@@ -17,7 +17,7 @@ public class Factory {
           return instance;
     }
 
-    public Statsjob getstatsjob(){
+    public Statsjob getAllstats(){
           if (statsjob == null){
         	  statsjob = new Logick();
           }

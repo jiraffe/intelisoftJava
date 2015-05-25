@@ -7,7 +7,7 @@ import Enumodel.Model;
 
 public interface Statsjob {
 
-    public void bdstats (Model hp) throws SQLException;
+
     public List getAllstats() throws SQLException;   
    
 }
